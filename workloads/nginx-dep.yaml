@@ -5,6 +5,7 @@ metadata:
   name: nginx-deployment
   namespace: trial
   annotations:
+    fluxcd.io/automated: "true"
     fluxcd.io/tag.nginx: glob:1.13.*
 spec:
   selector:
