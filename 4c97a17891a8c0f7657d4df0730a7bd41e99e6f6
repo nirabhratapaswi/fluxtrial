@@ -1,0 +1,1 @@
+{"jobID":"4ab28809-080a-f4e7-b709-cf6ec91101c3","spec":{"type":"policy","cause":{"Message":"","User":"Nirabhra Tapaswi \u003cnirabhratapaswi@gmail.com\u003e"},"spec":{"trial:deployment/nginx-deployment":{"add":{"tag.nginx":"glob:1.14.*"},"remove":{}}}},"result":null}
