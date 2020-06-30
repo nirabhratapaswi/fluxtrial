@@ -17,4 +17,4 @@ spec:
   values:
     replicaCount: 1
     service:
-      port: 80
+      port: 84
