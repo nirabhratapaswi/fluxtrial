@@ -13,4 +13,3 @@ spec:
     git: https://github.com/nirabhratapaswi/fluxtrial
     ref: master
     path: charts/trial
-  values:
