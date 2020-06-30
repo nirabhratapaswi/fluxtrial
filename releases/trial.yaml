@@ -5,7 +5,7 @@ metadata:
   name: trial
   namespace: trial
   annotations:
-    fluxcd.io/automated: "false"
+    fluxcd.io/automated: "true"
     fluxcd.io/tag.chart-image: glob:*
 spec:
   releaseName: flux-trial
