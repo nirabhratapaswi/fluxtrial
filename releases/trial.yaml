@@ -9,7 +9,6 @@ metadata:
     fluxcd.io/tag.chart-image: glob:*
 spec:
   releaseName: flux-trial
-  forceUpgrade: true
   chart:
     git: https://github.com/nirabhratapaswi/fluxtrial
     ref: master
