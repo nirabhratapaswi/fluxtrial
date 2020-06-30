@@ -1,8 +1,11 @@
+---
 apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
 kind: Deployment
 metadata:
   name: nginx-deployment
   namespace: trial
+  annotations:
+    fluxcd.io/tag.nginx: glob:1.14.*
 spec:
   selector:
     matchLabels:
@@ -14,7 +17,7 @@ spec:
         app: nginx
     spec:
       containers:
-        - name: nginx
-          image: nginx:1.14.2
-          ports:
-            - containerPort: 80
+      - name: nginx
+        image: nginx:1.14.2
+        ports:
+        - containerPort: 80
