@@ -11,6 +11,7 @@ spec:
   releaseName: flux-trial
   targetNamespace: trial
   forceUpgrade: true
+  resetValues: false
   chart:
     git: https://github.com/nirabhratapaswi/fluxtrial
     ref: master
