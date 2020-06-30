@@ -1,0 +1,16 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: trial
+  namespace: trial
+  annotations:
+    fluxcd.io/automated: "false"
+    fluxcd.io/tag.chart-image: glob:*
+spec:
+  releaseName: flux-trial
+  chart:
+    git: https://github.com/nirabhratapaswi/fluxtrial
+    ref: master
+    path: charts/trial
+  values:
