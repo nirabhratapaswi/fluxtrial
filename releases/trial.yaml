@@ -20,3 +20,5 @@ spec:
     replicaCount: 0
     service:
       port: 80
+    nodeapp:
+      image: nirabhratapaswi/flux-trial-app:master-0.1.3
