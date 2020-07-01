@@ -6,7 +6,7 @@ metadata:
   namespace: trial
   annotations:
     fluxcd.io/automated: "true"
-    fluxcd.io/tag.nodeapp-helm: glob:master-*
+    fluxcd.io/tag.nodeapp-helm: glob:master-*.*.*
 spec:
   selector:
     matchLabels:
