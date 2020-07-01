@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
       - name: nodeapp-helm
-        image: nirabhratapaswi/flux-trial-app:master-0.1.5
+        image: {{ .Values.nodeapp.image }}
         ports:
         - containerPort: 3000
