@@ -2,23 +2,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodeapp
+  name: nodeapp-helm
   namespace: trial
   annotations:
     fluxcd.io/automated: "true"
-    fluxcd.io/tag.nodeapp: dev:*
+    fluxcd.io/tag.nodeapp-helm: master:*
 spec:
   selector:
     matchLabels:
-      app: nodeapp
+      app: nodeapp-helm
   replicas: 1
   template:
     metadata:
       labels:
-        app: nodeapp
+        app: nodeapp-helm
     spec:
       containers:
-      - name: nodeapp
+      - name: nodeapp-helm
         image: nirabhratapaswi/flux-trial-app:master-0.1.0
         ports:
         - containerPort: 3000
