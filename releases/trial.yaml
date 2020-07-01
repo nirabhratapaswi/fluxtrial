@@ -17,6 +17,6 @@ spec:
     ref: master
     path: charts/trial
   values:
-    replicaCount: 1
+    replicaCount: 0
     service:
       port: 80
