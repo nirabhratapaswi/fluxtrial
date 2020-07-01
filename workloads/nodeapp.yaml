@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
       - name: nodeapp
-        image: nirabhratapaswi/flux-trial-app:master
+        image: nirabhratapaswi/flux-trial-app:master-0.1.0
         ports:
         - containerPort: 80
