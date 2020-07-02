@@ -7,6 +7,7 @@ metadata:
   annotations:
     fluxcd.io/automated: "true"
     fluxcd.io/tag.chart-image: glob:*
+    filter.fluxcd.io/nodeapp: glob:dev-*.*.*
 spec:
   releaseName: flux-trial
   targetNamespace: trial
