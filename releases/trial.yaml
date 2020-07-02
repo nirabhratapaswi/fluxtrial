@@ -22,4 +22,4 @@ spec:
     service:
       port: 80
     nodeapp:
-      image: nirabhratapaswi/flux-trial-app:dev-0.2.1
+      image: nirabhratapaswi/flux-trial-app:dev-0.3.1
